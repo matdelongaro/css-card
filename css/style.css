@@ -59,6 +59,7 @@ body{
 }
 .container .img-card .img-box img{
     position: absolute;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
@@ -68,7 +69,7 @@ body{
     position: absolute;
     top: 252px;
     width: 100%;
-    height: 35px;
+    height: 30px;
     padding: 0 30px;
     text-align: center;
     overflow: hidden;
@@ -76,8 +77,8 @@ body{
 
 }
 .container .img-card:hover .info{
-    top: 130px;
-    height: 250px;
+    top: 100px;
+    height: 280px;
 }
 .container .img-card .info h2{
     font-size:1.5rem;
@@ -89,7 +90,7 @@ body{
 }
 .container .img-card .info a{
     position: relative;
-    top: 15px;
+    top: 10px;
     display: inline-block;
     padding: 12px 25px;
     text-decoration: none;
@@ -101,6 +102,20 @@ body{
     opacity: 0.8;
     transition:0.9s ;
 }
+@media (max-width:480px){
+    .container .img-card{
+        width: 230px;
+        border-radius: 15px;
+    }
+    .container .img-card .img-box{
+        width: 185px;
+        border-radius: 10px;
+    }
+    .container .img-card .info p{
+        font-size: 0.8rem;
+    }
+    .container .img-card .info a{
+        font-size: 0.9rem;
+    }
 
-
-
+}
